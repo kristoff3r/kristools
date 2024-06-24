@@ -1,0 +1,12 @@
+[package]
+name = "kristools"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["z3"]
+z3 = ["dep:z3"]
+
+[dependencies]
+serde = { version = "1.0.203", features = ["derive"] }
+z3 = { version = "0.12.1", optional = true }
